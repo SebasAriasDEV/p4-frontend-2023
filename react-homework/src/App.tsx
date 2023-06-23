@@ -1,7 +1,17 @@
+import { useEffect, useState } from 'react';
 import { PokemonThumbnail } from './components/PokemonThumbnail';
+import { getPokemonList } from './helpers/getPokemonList';
 
 export const App = () => {
-  const pokemons = ['Pickachu', 'Bulbasour', 'Rinho','Other'];
+  const [pokemons, setPokemons] = useState<IPokemon[]>([]);
+  useEffect(() => {
+    getPokemonList().then((foundPokemons) => {
+      setPokemons(foundPokemons);
+    });
+  }, []);
+  console.log(pokemons);
+
+  //const pokemons = ['Pickachu', 'Bulbasour', 'Rinho', 'Other'];
   return (
     <div className='p-6'>
       <h1 className='text-3xl font-bold'>Pokemon Reference</h1>
