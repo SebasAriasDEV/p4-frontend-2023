@@ -9,7 +9,6 @@ export const App = () => {
       setPokemons(foundPokemons);
     });
   }, []);
-  console.log(pokemons);
 
   //const pokemons = ['Pickachu', 'Bulbasour', 'Rinho', 'Other'];
   return (
@@ -20,7 +19,7 @@ export const App = () => {
       <br />
       <div className='grid grid-cols-3 gap-4'>
         {pokemons.map((pokemon) => (
-          <PokemonThumbnail />
+          <PokemonThumbnail key={pokemon.name} pokemon={pokemon}/>
         ))}
       </div>
     </div>
