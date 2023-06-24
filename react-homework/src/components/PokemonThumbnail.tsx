@@ -13,7 +13,7 @@ export const PokemonThumbnail = ({ pokemon }: Props) => {
           {pokemon.name.toUpperCase()}
         </h3>
 
-        <Link to={`pokemons/${pokemon.id}`} className='bg-sky-800 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded'>
+        <Link to={`pokemons/${pokemon.id}`} className=' text-center bg-sky-800 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded'>
           See more
         </Link>
       </div>

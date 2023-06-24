@@ -1,5 +1,5 @@
 const getPokemonList = async (): Promise<IPokemon[]> => {
-  const url = 'https://pokeapi.co/api/v2/pokemon?limit=10';
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=30';
   const response = await fetch(url);
   const { results } = await response.json();
 

@@ -13,10 +13,8 @@ export const App = () => {
   //const pokemons = ['Pickachu', 'Bulbasour', 'Rinho', 'Other'];
   return (
     <div className='p-6'>
-      <h1 className='text-3xl font-bold'>Pokemon Reference</h1>
-      <br />
-      <hr />
-      <br />
+      <h1 className='text-3xl font-bold leading-7 text-sky-900'>Pokemon Reference</h1>
+      <hr className='my-8'/>
       <div className='grid grid-cols-4 gap-4'>
         {pokemons.map((pokemon) => (
           <PokemonThumbnail key={pokemon.name} pokemon={pokemon}/>
