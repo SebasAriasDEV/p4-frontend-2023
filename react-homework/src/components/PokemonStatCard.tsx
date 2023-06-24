@@ -1,6 +1,6 @@
 type Props = {
   title: string;
-  value: string;
+  value: number;
 };
 
 export const PokemonStatCard = ({ title, value }: Props) => {

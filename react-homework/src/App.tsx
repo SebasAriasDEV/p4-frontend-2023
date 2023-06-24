@@ -17,7 +17,7 @@ export const App = () => {
       <br />
       <hr />
       <br />
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-4 gap-4'>
         {pokemons.map((pokemon) => (
           <PokemonThumbnail key={pokemon.name} pokemon={pokemon}/>
         ))}

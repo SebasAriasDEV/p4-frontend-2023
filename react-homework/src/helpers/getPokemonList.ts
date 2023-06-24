@@ -15,6 +15,7 @@ const getPokemonList = async (): Promise<IPokemon[]> => {
 
     const pokemon: IPokemon = {
       ...pok,
+      id,
       img: pokemonImage,
     };
 
@@ -22,7 +23,7 @@ const getPokemonList = async (): Promise<IPokemon[]> => {
   }
 
   console.log(pokemons);
-  
+
   return pokemons;
 };
 
